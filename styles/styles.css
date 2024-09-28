@@ -9,6 +9,8 @@
 {
     --dark-colour: #000000;
     --light-colour: #FFFFFF;
+    --information: rgb(105, 105, 105);
+    --font: "BebasNeue", sans-serif;
 }
 
 body
@@ -25,7 +27,7 @@ body
 
 h1, h2, h3, h4, h4, p, a, span
 {
-    font-family: "BebasNeue", sans-serif;
+    font-family: var(--font);
 }
 
 #content
@@ -46,7 +48,7 @@ h1, h2, h3, h4, h4, p, a, span
 .information p
 {
     font-size: 2rem;
-    color: rgb(105, 105, 105);
+    color: var(--information);
 }
 
 .title

@@ -2,3 +2,59 @@
 {
     padding-top: 50px;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    box-shadow: 2px 2px 14px black;
+    width: 80%;
+    height: 100%;
+    transform-origin: top left;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info-container label {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--information);
+    font-family: var(--font);
+}
+
+.input-box {
+    height: 40px; /* Set fixed height */
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    margin-bottom: 3%;     
+    font-family: var(--font);
+    width: 100%; /* Full width of the container */
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+#message {
+    height: 210px; /* Set fixed height */
+    flex-grow: 0; /* Prevent growth */
+}
+
+.form-container .submit-btn {
+    align-self: flex-end;
+    width: 150px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: var(--colour);
+    border-color: white !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.form-container .submit-btn:hover {
+    color: #000000;
+    background-color: var(--light-colour) !important;
+    filter: brightness(1.05);
+}

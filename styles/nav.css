@@ -15,6 +15,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.288);
     transform: translateX(-70%);
     transition: transform 0.3s ease;
+    z-index: 1000;
 }
 
 #nav-bar:hover
