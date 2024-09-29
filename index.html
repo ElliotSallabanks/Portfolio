@@ -13,11 +13,11 @@
         <div id = "nav-bar">
             <a class = "nav-item" href = "#top">Home</a>
             <a class = "nav-item" href = "#about">About</a>
+            <a class = "nav-item" href = "#cv">cv</a>
             <a class = "nav-item" href = "#portfolio">Portfolio</a>
             <a class = "nav-item" href = "#contact">Contact</a>
-            <a class = "nav-item" href = "#cv">cv</a>
+            <a class = "linked-in nav-item" href = "https://www.linkedin.com/in/elliot-sallabanks-a207932bb/"><img style = "width: 30px; height: 30px;" src = "./images/link.webp"></a>
         </div>
-
         <div id = "content">
             <div id = "intro">
                 <div id = "title-container">
@@ -37,20 +37,49 @@
             <div id = "about">
                 <h1 class = "title">About</h1>
                 <div class = "information">
-                    <p>Hello, my name is Elliot and im studying Astrophysics at the University of Leicester.</p>
-                    <p>My favourite thing in space is supernovas.</p>
+                    <p>Hello, my name is Elliot. I am a student at the University of Leicester doing a bachelors degree in Physics with Astrophysics. The life journey and development of supernova to me is the most interesting aspect of Astrophysics which is the area of study I with to pursue further in my career.</p>
+                    <p>In my spare time i like to read fantasy novels to keep my mind developing and broaden my vocabulary and literature comprehension. As well as reading, I go bouldering weekly to keep active and have a good and healthy lifestyle.</p>
+                    <p>For my career i am hoping for a job in research or development of a branch of science related to space or traversal through the vast cosmos. </p>
+                    <img src = "images/elliot.webp" class = "profile-photo">
+                </div>
+            </div>
+            <div id = "cv">
+                <h1 class = "title">CV</h1>
+                <div class = "information"> 
+                    <p>Please check out my online CV. I'm hoping to expand it soon with more experience.</p>
+                    <a href = "https://docs.google.com/document/d/1NZrlvTIWTzuoXb3S6ySylWvxNTxfFjhV/edit?usp=sharing&ouid=112651568534494313792&rtpof=true&sd=true" target="_blank"><img class = "cv-img" src="./images/cv.png"></a>                    
                 </div>
             </div>
             <div id = "portfolio">
                 <h1 class = "title">Portfolio</h1>
                 <div class = "information">
+                    <div id = "project-holder">
+                        <a href = "" target = "_blank" class = "project">
+                            <div class = "projectInfo">
+                                <h1>Title</h1>
+                                <p>Info about this project...</p>
+                            </div>
+                        </a>
+                        <a href = "" target = "_blank" class = "project">
+                            <div class = "projectInfo">
+                                <h1>Title</h1>
+                                <p>Info about this project...</p>
+                            </div>
+                        </a>
+                        <a href = "" target = "_blank" class = "project">
+                            <div class = "projectInfo">
+                                <h1>Title</h1>
+                                <p>Info about this project...</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div id = "contact">
                 <h1 class = "title">Contact</h1>
                 <div class = "information">
                     <p>Please feel free to contact me with any enquiries or opportunites.</p>
-                    <form class = "form-container" action="https://formspree.io/f/xeqykrak" method="POST">
+                    <form class = "form-container" action="https://formspree.io/f/mkgwdbdr" method="POST">
                         <div class = "info-container">
                             <label for="name" >Name</label>
                             <input class = "input-box" type="text" id="name" name="name" required=""></input>
@@ -63,19 +92,18 @@
                             <label for="message">Message</label>
                             <textarea class = "input-box" id="message" name="message" rows="4" required=""></textarea>
                         </div>
-                        <button class="btn btn-primary submit-btn" type="submit">Send</button>
+                        <div class="button-container">
+                            <button class="btn btn-primary submit-btn" type="submit">Send</button>
+                            <a class="image-btn"><img style = "width: 50px;" src = "images/link.webp"></a>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div id = "cv"></div>
-                <h1 class = "title">CV</h1>
-                <div class = "information"> 
-                    <p>Please check out my online CV.</p>
-                    <div class = "iframe-container">
-                        <iframe id = "myIframe" sandbox="allow-scripts allow-same-origin" src="https://docs.google.com/document/d/1NZrlvTIWTzuoXb3S6ySylWvxNTxfFjhV/preview?usp=drive_link&ouid=112651568534494313792&rtpof=true&sd=true" height = "590px" width="435px">
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div id = "footer-container">
+            <footer id = "footer">
+                <a href = "https://lustrous-speculoos-46bdb3.netlify.app">Website Designed by Nathaniel Bates</a>
+            </footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

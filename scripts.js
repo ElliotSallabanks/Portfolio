@@ -25,3 +25,19 @@ window.onerror = function (msg, url, lineNo, columnNo, error) {
     }
     return false; // Let other errors go through
 };
+
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && window.innerWidth < 480) {
+        // Scrolling down
+        navBar.style.opacity = '0';
+    } else {
+        // Scrolling up or at the top
+        navBar.style.opacity = '1';
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});

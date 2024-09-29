@@ -1,0 +1,19 @@
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-top: rgba(66, 66, 66, 0.349) 2px solid;
+    z-index: 2000 !important;
+}
+
+#footer a{
+    color: rgba(255, 255, 255, 0.404);
+    margin-bottom: 2px;
+    float: right;
+    padding-right: 15px;
+}

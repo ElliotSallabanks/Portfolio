@@ -40,6 +40,21 @@ nav{
     height: auto;
 }
 
+.linked-in
+{
+    align-self: flex-end; 
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+    text-align: none;
+    margin-top: 57vh;
+}
+
+.linked-in:hover
+{
+    opacity: 1;
+}
+
+
 .nav-item
 {
     color: rgb(112, 112, 112);

@@ -1,10 +1,27 @@
 #cv
 {
-    padding-top: 50px;
+   padding-top: 50px;
 }
 
-.iframe-container {
+
+.cv-img {
+    display: block; /* Flex is not needed for the image itself */
+    width: 100%;/* Ensure the image does not exceed the container's width */
+    height: auto; /* Maintain the aspect ratio */
+    opacity: 0.8;
+    transform-origin: top left;
+    transition: transform 0.2s ease, opacity 0.2s ease, margin-bottom 0.2s ease;
+    border: 3px gray dashed;
+}
+
+#cv .information a {
+    display: block; /* Ensure the link takes up the full height of its container */
     height: 100%;
-    width: 100%;
-    overflow: hidden;
+    width: 500px;
+}
+
+.cv-img:hover {
+   transform: scale(1.05);
+   opacity: 1;
+   margin-bottom: 5%;
 }

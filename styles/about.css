@@ -3,3 +3,13 @@
     margin-top: 600px;
     padding-top: 50px;
 }
+
+.profile-photo
+{
+    width: 500px;
+    height: auto;
+    background-color: rgb(150, 150, 150);
+    background: url("/images/elliot.webp") no-repeat center center / cover;
+    outline: 3px gray dashed;
+    margin-top: 50px;
+}
